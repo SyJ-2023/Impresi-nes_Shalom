@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+</head>
+<body>
+    <h1>Panel de Administración</h1>
+    
+    <!-- Sección para agregar una nueva publicidad -->
+    <h2>Agregar Nueva Publicidad</h2>
+    <form id="formPublicidad" method="post" enctype="multipart/form-data" action="guardar_publicidad.php">
+        <label for="inputTitulo">Título:</label><br>
+        <input type="text" id="inputTitulo" name="titulo"><br>
+        <label for="inputImagen">Imagen:</label><br>
+        <input type="file" id="inputImagen" name="imagen"><br>
+        <input type="submit" value="Agregar Publicidad">
+    </form>
+
+    <!-- Sección para agregar una nueva imagen -->
+    <h2>Agregar Nueva Imagen</h2>
+    <form id="formImagen" method="post" enctype="multipart/form-data" action="guardar_imagen.php">
+        <label for="inputImagen">Imagen:</label><br>
+        <input type="file" id="inputImagen" name="imagen"><br>
+        <input type="submit" value="Agregar Imagen">
+    </form>
+
+    <!-- Sección para agregar un nuevo vídeo -->
+    <h2>Agregar Nuevo Vídeo</h2>
+    <form id="formVideo" method="post" action="guardar_video.php">
+        <label for="inputVideo">Video (URL):</label><br>
+        <input type="text" id="inputVideo" name="video"><br>
+        <input type="submit" value="Agregar Video">
+    </form>
+</body>
+</html>
